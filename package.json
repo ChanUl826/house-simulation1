@@ -1,0 +1,30 @@
+{
+  "name": "house-game",
+  "version": "1.0.0",
+  "description": "- ✅ React 프로젝트 생성 완료\r - ✅ GSAP 라이브러리 설치 완료\r - ✅ 게임 로직 구현 완료 (HouseGame.tsx)\r - ⚠️ SVG 마크업 부분 완성 필요 (HouseSVG.tsx)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "vite",
+    "vercel-build": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gsap": "^3.13.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "recharts": "^3.3.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@vitejs/plugin-react": "^5.1.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.12"
+  }
+}

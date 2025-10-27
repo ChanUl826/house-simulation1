@@ -1,0 +1,92 @@
+/* 통합 레이아웃 */
+.house-layout {
+  display: flex;
+  height: 100vh;
+  background: #CAE0D3;
+  padding-top: 110px; /* 상단 배너(48px) + 게이지(62px) 공간 확보 */
+  padding-bottom: 50px; /* 하단 상태 바 공간 확보 */
+}
+
+.house-main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.house-game {
+  width: 100%;
+  height: 100vh;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.house-game svg,
+.house-main svg {
+  width: 100%;
+  height: 100%;
+  max-width: calc(100vw - 700px); /* EnergyPanel(350px) + DataStructurePanel(350px) */
+  max-height: 100vh;
+  overflow: visible;
+}
+
+.house-game svg.no-cursor,
+.house-game svg.no-cursor .item,
+.house-main svg.no-cursor,
+.house-main svg.no-cursor .item {
+  cursor: none !important;
+}
+
+/* Place indicator (흰 배경) 기본 스타일 */
+.place {
+  transform-origin: center;
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* 스킵 버튼 스타일 */
+.skip-button {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  padding: 8px 16px;
+  background-color: #f4a261;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  z-index: 1000;
+  color: white;
+  font-size: 14px;
+}
+
+.skip-button:hover {
+  background-color: #e76f51;
+  color: white;
+}
+
+/* 자료구조 패널 토글 버튼 */
+.data-panel-toggle {
+  position: fixed;
+  top: 50px;
+  right: 15px;
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  z-index: 1000;
+  color: white;
+  font-size: 14px;
+}
+
+.data-panel-toggle:hover {
+  background-color: #45a049;
+  color: white;
+}

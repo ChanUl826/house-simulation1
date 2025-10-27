@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #cae0d3;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+svg {
+  display: block;
+}
+
+svg.no-cursor,
+svg.no-cursor .item {
+  cursor: none !important;
+}
+
+/* GSAP이 visibility를 관리하므로 초기 상태만 hidden */
+.item {
+  visibility: hidden;
+}
+
+#smile {
+  visibility: hidden;
+}
